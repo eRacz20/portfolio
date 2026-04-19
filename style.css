@@ -11,6 +11,7 @@ color:white;
 line-height:1.6;
 }
 
+/* HEADER */
 header{
 background:#000;
 padding:20px;
@@ -43,6 +44,7 @@ text-decoration:none;
 color:white;
 }
 
+/* MOBILE MENU BUTTON */
 #menu-btn{
 display:none;
 background:none;
@@ -82,12 +84,12 @@ padding:14px 24px;
 text-decoration:none;
 border-radius:6px;
 font-weight:bold;
+display:inline-block;
 }
 
 .btn{
 display:inline-block;
 margin-top:15px;
-margin-right:10px;
 padding:10px 16px;
 background:white;
 color:black;
@@ -101,6 +103,13 @@ background:#4CAF50;
 color:white;
 }
 
+/* BUTTON GROUP */
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
 /* SECTIONS */
 .featured, .projects{
 padding:80px 20px;
@@ -108,6 +117,7 @@ max-width:1000px;
 margin:auto;
 }
 
+/* GRID */
 .project-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -131,13 +141,6 @@ transform:scale(1.03);
 border:2px solid #4CAF50;
 }
 
-/* PHASE NOTE */
-.phase-note{
-text-align:center;
-color:#aaa;
-margin-top:10px;
-}
-
 /* ABOUT */
 .about{
 padding:80px 20px;
@@ -146,6 +149,7 @@ margin:auto;
 text-align:center;
 }
 
+/* FOOTER */
 footer{
 text-align:center;
 padding:40px;
@@ -155,6 +159,14 @@ margin-top:40px;
 
 /* MOBILE */
 @media(max-width:700px){
+
+.hero{
+padding:80px 15px;
+}
+
+.hero h1{
+font-size:32px;
+}
 
 .project-grid{
 grid-template-columns:1fr;
@@ -168,6 +180,7 @@ top:70px;
 right:20px;
 background:#000;
 padding:20px;
+border:1px solid #333;
 }
 
 .nav-links.active{
@@ -176,6 +189,16 @@ display:flex;
 
 #menu-btn{
 display:block;
+}
+
+/* stack buttons nicely */
+.buttons{
+flex-direction:column;
+}
+
+.btn{
+width:100%;
+text-align:center;
 }
 
 }
