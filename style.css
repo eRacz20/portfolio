@@ -131,6 +131,13 @@ transform:scale(1.03);
 border:2px solid #4CAF50;
 }
 
+/* PHASE NOTE */
+.phase-note{
+text-align:center;
+color:#aaa;
+margin-top:10px;
+}
+
 /* ABOUT */
 .about{
 padding:80px 20px;
